@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+import { Geolocation } from "@ionic-native/geolocation";
 import { MapPage } from './map';
 
 @NgModule({
@@ -9,5 +10,8 @@ import { MapPage } from './map';
   imports: [
     IonicPageModule.forChild(MapPage),
   ],
+  providers: [
+    Geolocation
+  ]
 })
 export class MapPageModule {}
